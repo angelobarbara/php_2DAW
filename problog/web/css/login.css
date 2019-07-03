@@ -1,0 +1,70 @@
+.login_usuario{
+    display:flex;
+    min-width: 100%;
+}
+
+#lb_username{
+    grid-area: lb_username;
+    font-size: 2em;
+}
+#lb_password{
+    grid-area: lb_password;
+    font-size: 2em;
+}
+#username{
+    grid-area: username;
+    font-size: 2em;
+}
+#password{
+    grid-area: password;
+}
+#login{
+    grid-area: submit;
+    margin:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2em;
+
+}
+.login_usuario form{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows:repeat(3,1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+            "lb_username username"
+            "lb_password password"
+            "submit submit";
+    width: 100%;
+}
+
+.formulario_nuevo_registro{
+    display: flex;
+    flex-flow: column;
+}
+.formulario_nuevo_registro form>div{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.formulario_nuevo_registro form>div>div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 2em;
+    margin: 10px 0;
+}
+input{
+    font-size: 1em;
+}
+#usuario_registrar{
+    width: 100%;
+    font-size: 1em;
+}
+.cabecera h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color:orange;
+    margin:20px 0;
+}

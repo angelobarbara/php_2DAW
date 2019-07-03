@@ -1,0 +1,16 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/index.html.twig #}
+{% extends '@BloggerBlog/Page/login.html.twig' %}
+
+{% block body %}
+    <header class="cabecera">
+        <h1>Creación nuevo usuario</h1>
+    </header>
+    <article class="formulario_nuevo_registro">
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </article>
+{% endblock %}
+    {% block footer %}
+        ¿Ya tienes una cuenta? <a href="{{ path('login') }}">Inicia sesión</a>
+    {% endblock %}

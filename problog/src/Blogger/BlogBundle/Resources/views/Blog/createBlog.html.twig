@@ -1,0 +1,6 @@
+{% extends '@BloggerBlog/layout.html.twig' %}
+{% block title %}Add Blog{% endblock %}
+{% block body %}
+    <h1>Add a new blog</h1>
+    {% include '@BloggerBlog/Blog/formBlog.html.twig' with {'form':form} %}
+{% endblock %}
